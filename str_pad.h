@@ -50,8 +50,10 @@
 #define STRING_PAD_LIBRARY_H
 #ifndef FLUENT_LIBC_RELEASE
 #   include <string_builder.h> // fluent_libc
+#   include <types.h> // fluent_libc
 #else
 #   include <fluent/string_builder/string_builder.h> // fluent_libc
+#   include <fluent/types/types.h> // fluent_libc
 #endif
 
 // ============= FLUENT LIB C++ =============
@@ -59,8 +61,6 @@
 extern "C"
 {
 #endif
-
-typedef long int ssize_t; // Signed size type
 
 /**
  * Pads the given string with spaces on the right to reach the specified total width.
