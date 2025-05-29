@@ -12,7 +12,7 @@ project(str_pad C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(str_pad STATIC library.c)
+add_library(str_pad STATIC str_pad.c)
 
 target_include_directories(str_pad PRIVATE ${CMAKE_BINARY_DIR}/_deps/string_builder-src)
 target_link_libraries(str_pad PRIVATE string_builder)
