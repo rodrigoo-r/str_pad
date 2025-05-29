@@ -73,7 +73,7 @@ typedef long int ssize_t; // Signed size type
  * If the length of `str` is greater than or equal to `spaces`, a copy of the original string is returned.
  * Uses a string builder for efficient string manipulation.
  */
-inline char *str_pad(const size_t spaces, const char *str)
+static inline char *str_pad(const size_t spaces, const char *str)
 {
     if (spaces == 0 || str == NULL)
     {
